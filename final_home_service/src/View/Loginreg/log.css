@@ -1,0 +1,304 @@
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    background-image: url();
+
+}
+body,  input{
+    font-family:'Poopins',sans-serif;
+
+}
+
+.logdiv1{
+    position: relative;
+    /* width: 100%; */
+    min-height: 85vh;
+    background-color: #fff;
+    overflow:hidden;
+    border-radius: 11%;
+}
+
+.logdiv2{
+    position: absolute;
+    /* width: 100%; */
+    height: 100%;
+    top:0;
+    left:0;
+    /* margin-right: -100px; */
+    margin-left: -9px;
+    margin-top: -9px;
+    /* margin-bottom: -19px; */
+}
+
+.logdiv2{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+}
+
+.logh2{
+    font-size: 2.2rem;
+    color:#444;
+    margin-bottom: 15px;
+   text-align: center;
+}
+.logdiv4{
+
+    max-width:380px;
+    width:100%;
+    height: 55px;
+    background-color:#f0f0f0;
+    margin:10px 0;
+    border-radius:15px;
+    display:grid;
+    grid-template-columns:15% 85%;
+    padding:0 .4rem;
+}
+
+.logdiv4 i{
+    text-align:center;
+    line-height: 55px;
+    color:#acacac;
+    font-size: 1.1rem;
+
+}
+
+.logdiv4  input{
+    background: none;
+    outline:none;
+    border:none;
+    line-height: 1;
+    font-weight:600;
+    font-size:1.1rem;
+    color:#333;
+    cursor: pointer;
+}
+.logdiv4  input::placeholder{
+    color:#aaa;
+    font-weight:500;
+}
+.loginbutton{
+    width:150px;
+    height:49px;
+    outline:none;
+    margin-left: 110px !important;
+    border-radius: 48px;
+ /*   background : linear-gradient(90deg, #808080,    darkseagreen);*/
+ background-color: rgb(0, 0, 0);
+    text-transform:uppercase;
+    font-weight:600;
+    /* margin: 10px; */
+    margin-top: -10px;
+    color: #f0f0f0 !important;
+    font-size:15px;
+    font-weight: bold;
+    position:realtive;
+	 cursor: pointer;
+    text-decoration:none;
+    letter-spacing:2px;
+    overflow:hidden;
+    text-transform:uppercase;
+    margin:20px;
+}
+
+
+.soacial-text{
+    display:flex;
+    justify-content:center;
+    padding:0.7 rem 0;
+    margin:-7px;
+}
+/*
+.social-icon{
+    height:46px;
+    width:46px;
+    border:1px solid #333;
+    margin:0 0.45rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    color:#333;
+    font-size:1.3rem;
+    border-radius:50%;
+    transition: all 0.5s;
+    border-radius: 0%;
+    box-shadow:0 0 20px 10px rgba(0,0,0,0,0.05);
+
+}*/
+/*.social-media a .fa{
+    font-size: 30px;
+    line-height: 80px;
+
+};*/
+/*.social-media a::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(-45deg,#ed1c94,#ffec17);
+    position: absolute;
+}*/
+.logdiv1::before{
+    content: '';
+    position:absolute;
+    height:2000px;
+    width: 2000px;
+    top: -10%;
+    right:48%;
+
+}
+/*.fa-fa-facebook-f{
+    height:23px;
+    widht:20px;
+   /* padding: :5px;
+    margin: :6px;*/
+  /*  margin:3px;*/
+    /*justify-content: center;*/
+
+/*}*/
+.fa-fa-facebook-f-1{
+    height:24px;
+    width:24px;
+    margin-bottom:-3px;
+}
+.social-media{
+    padding-top:20px;
+}
+.fa-user:before {
+    content: "\f007";
+}
+
+.social-linkslog{
+    display: flex;
+}
+.social-linkslog a{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    box-shadow: 0 0 20px 10px rgba(0,0,0,0.05);
+    margin: 0 10px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.social-linkslog a .fa{
+    font-size: 30px;
+    line-height: 55px;
+    position: relative;
+    z-index: 10;
+}
+
+.social-linkslog a::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: -90px;
+    left: 0;
+    background: linear-gradient(-45deg,#ed1c94,#ffec17);
+    position: absolute;
+    transition: 0.4s;
+}
+
+.social-linkslog a:hover::after{
+    top: 0px;
+}
+.social-linkslog a:hover .fa{
+    color: rgb(0, 0, 0);
+}
+
+.social-linkslog  a:hover{
+    transform: translateY(-10px);
+}
+.w-10{
+    /* margin:18px; */
+    padding-right:150px;
+}
+.my-dcus-flex{
+    width: 100%;
+    justify-content: space-around;
+}
+.mar_left_20{
+    margin-left: 20px;
+}
+.mar_right_20{
+    margin-right: 20px;
+}
+
+.t_b_margin_20{
+    margin: 20px 0;
+}
+/* #forg{
+    padding-left:300px;
+    margin-top:-20px;
+} */
+
+.logh2{
+    margin-top:20px;
+    font-size:40px;
+    font-weight: bold;
+}
+.acc{
+    margin:30px;
+    padding-left:30px;
+   /* font-size:13px;*/
+    font-weight: bold;
+    cursor: pointer;
+}
+.newpage:hover{
+    color: blue;
+
+}
+#lohid1{
+
+    /*border: 2px solid green;*/
+    margin-left: 10PX;
+    margin-right: 10px; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 30px;
+    background: #f4f4f5;
+border-radius: 50px;
+    /* box-shadow: 2px 2px 20px #000;
+    -webkit-box-shadow: 0 0 2px 1px rgba(255, 169, 0, 0.5);
+    -moz-box-shadow: 0 0 2px 1px rgba(255, 169, 0, 0.5);
+    box-shadow: 0 0 2px 1px rgba(255, 169, 0, 0.5);
+    border: 2px solid #f5ba1a; */
+    
+  -webkit-transform-origin: 50% 0%;
+  /* box-shadow: 0 0 2px 1px rgba(255, 169, 0, 0.5); */
+    background-color:#f4f4f5 ;
+}
+.logbg{
+    margin:-87px;
+}
+/*#FF8F00 100%);*/
+
+/*#ed1c94,#ffec17*/
+
+#check{
+    margin-top: 15px;
+    margin-left: 40px;
+}
+
+.space{
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+.newpage{
+    color: black;
+    text-align:right;
+    margin-left: 137px;
+    font-weight: bold;
+}
