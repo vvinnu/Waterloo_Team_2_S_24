@@ -23,7 +23,7 @@ function Resetpass() {
                     method: 'POST',
                     body: formdata,
                 };
-                fetch('http://localhost:5050/updatepassword', option)
+                fetch('http://localhost:3001/updatepassword', option)
                     .then(res => res.json())
                     .then(data => {
                         console.log(data);

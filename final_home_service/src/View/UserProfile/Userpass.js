@@ -54,7 +54,7 @@ function Userpass() {
           }
           console.log("option");
           console.log(option);
-          fetch('http://localhost:5050/updateuserpassword', option)
+          fetch('http://localhost:3001/updateuserpassword', option)
             .then(response => response.json())
             .then(data => {
               // console.log(data.id);
@@ -72,11 +72,11 @@ function Userpass() {
          }
          else{
            
-           Notification({ message: 'Password is not match..!', position: 'right', type: 'error' });
+           Notification({ message: 'New Password do not match..!', position: 'right', type: 'error' });
          }
        }
     else{
-      Notification({ message: 'Password is not match..!', position: 'right', type: 'error' });
+      Notification({ message: 'New Passwords do not match..!', position: 'right', type: 'error' });
     }
     
   }

@@ -20,7 +20,7 @@ function Forgot() {
             method:'POST',
             body:formdata,
         }
-        fetch('http://localhost:5050/sendotp',option)
+        fetch('http://localhost:3001/sendotp',option)
         .then(res=>res.json())
         .then(data=>{
             console.log(data);

@@ -37,7 +37,46 @@ const Rou=[
         exact:true,
         element:lazy(()=>import('../password')),
     },
-   
+    {
+        path:'/Services',
+        exact:true,
+        element:lazy(()=>import('../Services')),
+    },
+    {
+        path:'/Category',
+        exact:true,
+        element:lazy(()=>import('../Category')),
+    },
+    {
+        path:'/Country',
+        exact:true,
+        element:lazy(()=>import('../country')),
+    },
+    {
+        path:'/Editcountry/:id',
+        exact:true,
+        element:lazy(()=>import('../editcountry')),
+    },
+    {
+        path:'/State',
+        exact:true,
+        element:lazy(()=>import('../state')),
+    },
+    {
+        path:'/City',
+        exact:true,
+        element:lazy(()=>import('../city')),
+    },
+    {
+        path:'/Editcity/:id',
+        exact:true,
+        element:lazy(()=>import('../editcity')),
+    },
+    {
+        path:'/Product',
+        exact:true,
+        element:lazy(()=>import('../product')),
+    },
     
 ]
 

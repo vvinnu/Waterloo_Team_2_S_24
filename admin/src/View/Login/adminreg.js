@@ -47,7 +47,7 @@ function Adminreg() {
         .then(response => response.json())
         .then(data => {
           console.log(data.id);
-          if (data.status == 'Sucsess') {
+          if (data.status == 'Success') {
             setsubmit((submit) => submit + 1);
             Notification({ message: data.message, position: 'right', type: 'success' });
             navigate('/Login');
@@ -76,7 +76,7 @@ function Adminreg() {
         <div className="main-panel">
           <div className="content-wrapper" id="service">
             <div className="page-header">
-              <h3 className="page-title" style={{ marginLeft: '430px', fontSize: '25px' }}>Register</h3>
+              <h3 className="page-title" style={{ marginLeft: '430px', fontSize: '25px' }}>Registration</h3>
               <nav aria-label="breadcrumb">
                 <ol className="breadcrumb">
                   {/* <li className="breadcrumb-item"><a href="#">Forms</a></li> */}

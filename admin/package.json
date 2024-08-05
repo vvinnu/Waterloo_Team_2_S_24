@@ -16,6 +16,7 @@
     "lazy": "^1.0.11",
     "loadjs": "^4.2.0",
     "moment": "^2.29.2",
+    "multer": "^1.4.5-lts.1",
     "mysql2": "^3.10.1",
     "react": "^17.0.2",
     "react-data-table-component": "^7.4.7",

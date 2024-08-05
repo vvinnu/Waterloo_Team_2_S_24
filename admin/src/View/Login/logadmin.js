@@ -33,11 +33,11 @@ function Logadmin() {
         };
         console.log("adminlo");
         console.log(requestOptions);
-        fetch('http://localhost:5050/adminlog', requestOptions)
+        fetch('http://localhost:4001/adminlog', requestOptions)
             .then(response => response.json())
             .then(data => {
                 console.log(data.id);
-                if (data.status == 'Sucsess') {
+                if (data.status == 'Success') {
                     setsubmit((submit) => submit + 1);
                     localStorage.setItem('user', JSON.stringify(data.user));
                     navigate('/');

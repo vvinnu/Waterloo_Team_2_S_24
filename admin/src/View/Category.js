@@ -9,7 +9,7 @@ function Category() {
   const [submit, setsubmit] = useState(0);
   const getcategory = () => {
 
-    fetch('http://localhost:5050/getcategory')
+    fetch('http://localhost:4001/getcategory')
       .then(response => response.json())
       .then(data => {
         console.log("CATEGORY");
@@ -46,7 +46,7 @@ function Category() {
       headers: { "Content-Type": "application/json" }
     };
     console.log(cate);
-    fetch('http://localhost:5050/delcategory', requestOptions)
+    fetch('http://localhost:4001/delcategory', requestOptions)
       .then(response => response.json())
       .then(data => {
         console.log(data);
@@ -77,11 +77,11 @@ function Category() {
     }
     console.log("option");
     console.log(option);
-    fetch('http://localhost:5050/category', option)
+    fetch('http://localhost:4001/category', option)
       .then(response => response.json())
       .then(data => {
         console.log(data.id);
-        if (data.status == 'Sucsess') {
+        if (data.status == 'Success') {
           setsubmit((submit)=>submit+1);
           Notification({ message: data.message, position: 'right', type: 'success' });
           setcate({});
@@ -106,7 +106,7 @@ function Category() {
     },
     {
       name: 'Image',
-      selector: row=><img width="50px" src={`http://127.0.0.1:5050/images/${row.c_img ? row.c_img : '123.jpg'}`} alt="images" />,
+      selector: row=><img width="50px" src={`http://127.0.0.1:4001/images/${row.c_img ? row.c_img : '123.jpg'}`} alt="images" />,
       sortable: true,
     },
     {

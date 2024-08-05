@@ -85,7 +85,7 @@ function Home() {
               <div className="col-xl-4 col-md-4" >
                 <div className="thumbexcat">
                   <div className="thumbnailcat"><a href={`/Service/${val.c_id}`} >
-                    <img src={`http://127.0.0.1:5050/images/${val.c_img ? val.c_img : '123.jpg'}`} height="100%" width="100%" />
+                    <img src={`http://127.0.0.1:3001/images/${val.c_img ? val.c_img : '123.jpg'}`} height="100%" width="100%" />
                     <span>{val.c_name}</span> </a>
                   </div>
                 </div>

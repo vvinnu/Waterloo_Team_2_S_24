@@ -10,6 +10,12 @@ const Forgot = lazy(() => import('../Loginreg/Forgot'));
 const Resetpass = lazy(() => import('../Loginreg/resetpass.js'));
 const Otp = lazy(() => import('../Loginreg/otppass.js'));
 const Userpass = lazy(() => import('../UserProfile/Userpass'));
+const Userprofile = lazy(() => import('../UserProfile/userprofile'));
+const Service = lazy(() => import('../Service'));
+const Servicedetail = lazy(() => import('../servicedetail'));
+const Product = lazy(() => import('../product'));
+const ProductDetail = lazy(() => import('../productdetail'));
+
 
 const Rou = [
     { path: '/', exact: true, element: <Home /> },
@@ -22,6 +28,12 @@ const Rou = [
     { path: '/Resetpass', exact: true, element: <Resetpass /> },
     { path: '/Otp', exact: true, element: <Otp /> },
     { path: '/Userpass', exact: true, element: <Userpass /> },
+    { path: '/Userprofile', exact: true, element: <Userprofile /> },
+    { path: '/Service', exact: true, element: <Service /> },
+    { path: '/ServiceDetail/:id', exact: true, element: <Servicedetail /> },
+    { path: '/product', exact: true, element: <Product /> },
+    { path: '/productdetail/:id', exact: true, element: <ProductDetail /> },
+
 ];
 
 export default Rou;

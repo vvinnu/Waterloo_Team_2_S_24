@@ -14,7 +14,7 @@ function State() {
   const [submit, setsubmit] = useState(0);
   const getcountry = () => {
 
-    fetch('http://localhost:5050/getcountry')
+    fetch('http://localhost:4001/getcountry')
       .then(response => response.json())
       .then(data => {
         console.log("country");
@@ -28,7 +28,7 @@ function State() {
 
   const getstate = () => {
 
-    fetch('http://localhost:5050/getState')
+    fetch('http://localhost:4001/getState')
       .then(response => response.json())
       .then(data => {
         console.log("state");
@@ -63,11 +63,11 @@ function State() {
     };
     //   console.log("state DATAA");
     //   console.log(state);
-    fetch('http://localhost:5050/state', requestOptions)
+    fetch('http://localhost:4001/state', requestOptions)
       .then(response => response.json())
       .then(data => {
         console.log(data.id);
-        if (data.status == 'Sucsess') {
+        if (data.status == 'Success') {
           setsubmit((submit) => submit + 1);
           Notification({ message: data.message, position: 'right', type: 'success' });
         }
@@ -99,11 +99,11 @@ function State() {
       body: JSON.stringify({ staid: id }),
       headers: { "Content-Type": "application/json" }
     };
-    fetch('http://localhost:5050/delstate', requestOptions)
+    fetch('http://localhost:4001/delstate', requestOptions)
       .then(response => response.json())
       .then(data => {
         console.log(data);
-        if (data.status == 'Sucsess') {
+        if (data.status == 'Success') {
           setResponse((response) => response + 1);
           Notification({ message: data.message, position: 'right', type: 'success' });
           setState({});
